@@ -46,7 +46,6 @@ java com.metglobal.example.App
 ```
 
 ### Dependencies
-
 Maven does the dependency management using the concept of Repositories. 
 üstteki için manifest bağımlılığı ekleyip örnekle ve java jarla tekrar çalıştır
 
@@ -56,12 +55,10 @@ buna bakarsın
 ### Snapshot
 
 ## Spring Framework
-
+Spring is a MVC framework written in Java. It also supports Kotlin and Groovy languages.
 
 ### Spring Boot
-Spring Boot contains a comprehensive infrastructure support for developing a micro service and enables you to develop enterprise-ready applications that you can “just run”.
-
-### Annotations
+Spring Boot contains a comprehensive infrastructure support for developing a micro service and enables you to develop enterprise-ready applications that you can “just run”. It contains of Spring MVC, Tomcat 
 
 ### Starter dependencies
 Parent pom is required for all Spring Boot applications:
@@ -75,6 +72,13 @@ Parent pom is required for all Spring Boot applications:
 </parent>
 ```
 
+Most used starter dependencies:
+
+
+### Typical project layout
+
+
+
 ### Create Spring Boot project
 
 We can create a Spring Boot project by three ways:
@@ -83,19 +87,43 @@ We can create a Spring Boot project by three ways:
 2. From Spring Initializr (http://start.spring.io)
 3. From IDE (we'll use IntelliJ IDEA for this)
 
-### Create REST API
 
-Proje oluştur üzerinden göster
+## Create REST service
+
 We should add `spring-boot-starter-web` dependency for creating REST APIs.
 
-### Dependency Injection 
+```
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+```
 
-Autowire kısmına teorik dalıp kodda gösterirsin
+### Controller
+
+We should specify controllers with @Controller or @RestController annotations. Example controller:
+
+```
+@RestController
+public class MainController {
+    @RequestMapping(value = "/", method = RequestMethod.GET) // or @GetMapping
+    public String hello() {
+        return "Hello world";
+    }
+}
+```
+
+### Returning objects
+
+## Bundan sonra controller metodunu servise taşı ve autowiringi öyle göster
 
 ### application.properties
 
+
 ### RestTemplate for sending clients
 
+Döviz servisine bağlan
+
 ## Thymeleaf
-## JPA
+## JPA (sarkabilir)
 
