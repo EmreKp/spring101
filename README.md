@@ -6,7 +6,7 @@ Apache Maven is a software project management and comprehension tool. Based on t
 
 ### POM (Project Object Model)
 POM is fundamental unit of work in Maven. It is an XML file that resides in the base directory of the project as pom.xml.
-The POM contains information about the project and various configuration detail used by Maven to build the project(s) and also contains the goals and plugins. While executing a task or goal, Maven looks for the POM in the current directory. It reads the POM, gets the needed configuration information, and then executes the goal. DEVAM EDEBİLİRSİN
+The POM contains information about the project and various configuration detail used by Maven to build the project(s) and also contains the goals and plugins. While executing a task or goal, Maven looks for the POM in the current directory. It reads the POM, gets the needed configuration information, and then executes the goal.
 
 ```
 <project xmlns = "http://maven.apache.org/POM/4.0.0"
@@ -15,8 +15,8 @@ The POM contains information about the project and various configuration detail 
    http://maven.apache.org/xsd/maven-4.0.0.xsd">
    <modelVersion>4.0.0</modelVersion>
 
-   <groupId>com.metglobal.example</groupId>
-   <artifactId>hello-world</artifactId>
+   <groupId>com.metglobal.example</groupId> <!-- package name !-->
+   <artifactId>hello-world</artifactId><!-- project name !-->
    <version>1.0</version>
 </project>
 ```
@@ -54,11 +54,8 @@ buna bakarsın
 
 ### Snapshot
 
-## Spring Framework
-Spring is a MVC framework written in Java. It also supports Kotlin and Groovy languages.
-
-### Spring Boot
-Spring Boot contains a comprehensive infrastructure support for developing a micro service and enables you to develop enterprise-ready applications that you can “just run”. It contains of Spring MVC, Tomcat 
+## Spring Boot
+Spring Boot contains a comprehensive infrastructure support for developing a micro service and enables you to develop enterprise-ready applications that you can “just run”. It contains of Spring MVC, Tomcat, Hibernate etc.
 
 ### Starter dependencies
 Parent pom is required for all Spring Boot applications:
@@ -73,6 +70,10 @@ Parent pom is required for all Spring Boot applications:
 ```
 
 Most used starter dependencies:
+**spring-boot-starter-web** : for writing REST endpoints
+**spring-boot-starter-security** : for writing security services like authentication
+**spring-boot-starter-thymeleaf** : for web applications
+**spring-boot-starter-actuator** : for monitoring application
 
 
 ### Typical project layout
@@ -86,7 +87,6 @@ We can create a Spring Boot project by three ways:
 1. From command line
 2. From Spring Initializr (http://start.spring.io)
 3. From IDE (we'll use IntelliJ IDEA for this)
-
 
 ## Create REST service
 
@@ -114,6 +114,8 @@ public class MainController {
 ```
 
 ### Returning objects
+
+
 
 ## Bundan sonra controller metodunu servise taşı ve autowiringi öyle göster
 
