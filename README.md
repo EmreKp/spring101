@@ -45,12 +45,57 @@ cd target/classes
 java com.metglobal.example.App
 ```
 
-### Dependencies and plugins
+### Dependencies
 
+Maven does the dependency management using the concept of Repositories. 
+üstteki için manifest bağımlılığı ekleyip örnekle ve java jarla tekrar çalıştır
 
 ### Repositories
+buna bakarsın
 
-## What is Spring?
+### Snapshot
+
+## Spring Framework
 
 
-## Spring Boot
+### Spring Boot
+Spring Boot contains a comprehensive infrastructure support for developing a micro service and enables you to develop enterprise-ready applications that you can “just run”.
+
+### Annotations
+
+### Starter dependencies
+Parent pom is required for all Spring Boot applications:
+
+```
+<parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.1.6.RELEASE</version> <!-- this is Spring Boot version !-->
+    <relativePath />
+</parent>
+```
+
+### Create Spring Boot project
+
+We can create a Spring Boot project by three ways:
+
+1. From command line
+2. From Spring Initializr (http://start.spring.io)
+3. From IDE (we'll use IntelliJ IDEA for this)
+
+### Create REST API
+
+Proje oluştur üzerinden göster
+We should add `spring-boot-starter-web` dependency for creating REST APIs.
+
+### Dependency Injection 
+
+Autowire kısmına teorik dalıp kodda gösterirsin
+
+### application.properties
+
+### RestTemplate for sending clients
+
+## Thymeleaf
+## JPA
+
