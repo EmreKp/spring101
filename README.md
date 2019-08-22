@@ -41,9 +41,16 @@ Packaging:  `mvn package` | `mvn install` | `mvn clean package` | `mvn clean ins
 Running:
 
 ```
-java -jar target/hello-maven-1.0-SNAPSHOT.jar
+cd target/classes
+java com.metglobal.example.App
 ```
 
+### Dependencies and plugins
+
+
+### Repositories
+
 ## What is Spring?
+
 
 ## Spring Boot
