@@ -6,7 +6,7 @@ Apache Maven is a software project management and comprehension tool. Based on t
 
 ### Features
 
-- simple project setup that follows best practices: Maven tries to avoid as much configuration as possible, by supplying project templates (named archetypes)
+- simple project setup that follows best practices: Maven tries to avoid as much configuration as possible, by supplying project templates (named archetypes) (see also https://maven.apache.org/guides/introduction/introduction-to-archetypes.html)
 - dependency management: it includes automatic updating, downloading and validating the compatibility
 - isolation between project dependencies and plugins: with Maven, project dependencies are retrieved from the dependency repositories while any plugin’s dependencies are retrieved from the plugin repositories, resulting in fewer conflicts when plugins start to download additional dependencies
 - central repository system: project dependencies can be loaded from the local file system or public repositories, such as Maven Central (www.mvnrepository.com)
@@ -51,10 +51,17 @@ java com.metglobal.example.App
 
 ### Dependencies/plugins
 
-For running JAR file with above app, we need :
+For running JAR file with above app, we need manifest file in it, but :
 
 ```
-
+<dependencies>
+    ...
+    <dependency>
+        <groupId></groupId>
+        <arti
+    </dependency>
+    ...
+</dependencies>
 ```
 
 #### Code structure
