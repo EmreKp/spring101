@@ -54,14 +54,21 @@ java com.metglobal.example.App
 For running JAR file with above app, we need manifest file in it, but :
 
 ```
-<dependencies>
-    ...
-    <dependency>
-        <groupId></groupId>
-        <arti
-    </dependency>
-    ...
-</dependencies>
+<build>
+   <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>com.example.compass.App</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+   </plugins>
+</build>
 ```
 
 #### Code structure
@@ -72,12 +79,16 @@ For running JAR file with above app, we need manifest file in it, but :
 |src/main/resources|contains static files and properties|
 
 ### Repositories
-Repository syntax:
-```
 
+There are three types of repositories: local, central, remote. Remote repository syntax:
 ```
-
-### Snapshot
+<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+</repositories>
+```
 
 ## Spring Boot
 Spring Boot contains a comprehensive infrastructure support for developing a micro service and enables you to develop enterprise-ready applications that you can “just run”. Spring Boot doesn't require XML configuration, it can be easily done with annotations (**@Component**, **@Configuration**, **Service** etc.)
@@ -103,7 +114,7 @@ Most used starter dependencies:
 
 ### Typical project layout
 
-
+![layout](https://www.tutorialspoint.com/spring_boot/images/typical_layout_of_spring_boot_application.jpg)
 
 ### Create Spring Boot project
 
@@ -140,11 +151,10 @@ public class MainController {
 
 ### Returning objects
 
-
+Look at code
 
 ### application.properties
 
-Örnek kod gir
 
 ### RestTemplate for sending clients
 
