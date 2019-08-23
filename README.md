@@ -118,11 +118,7 @@ Most used starter dependencies:
 
 ### Create Spring Boot project
 
-We can create a Spring Boot project by three ways:
-
-1. From command line
-2. From Spring Initializr (http://start.spring.io)
-3. From IDE (we'll use IntelliJ IDEA for this)
+We can create a Spring Boot project from Spring Initializr (http://start.spring.io) or from IDE (we'll use IntelliJ IDEA for this).
 
 ## Create REST service
 
@@ -151,14 +147,24 @@ public class MainController {
 
 ### Returning objects
 
-Look at code
+Create an object and return it as JSON instead of string.
 
 ### application.properties
+properties file only consists:
 
+```
+currency.url=http://currency-test.com
+```
+
+We can access the value by: 
+
+```
+@Value("${currency.url}")
+private String currencyUrl;
+```
 
 ### RestTemplate for sending clients
 
 
 ## Thymeleaf
-## JPA (sarkabilir)
-
+## JPA
