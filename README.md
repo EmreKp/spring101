@@ -149,6 +149,10 @@ public class MainController {
 
 Create an object and return it as JSON instead of string.
 
+### Dependency Injection - Autowiring
+
+We should write business logic to services and autowire in controller.
+
 ### application.properties
 properties file only consists:
 
@@ -162,6 +166,7 @@ We can access the value by:
 @Value("${currency.url}")
 private String currencyUrl;
 ```
+
 
 ### RestTemplate for sending clients
 
