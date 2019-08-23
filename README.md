@@ -51,7 +51,7 @@ java com.metglobal.example.App
 
 ### Plugins
 
-For running JAR file with above app, we need manifest file in it, but :
+For running JAR file with above app, we need manifest file in it, but we should run :
 
 ```
 <build>
