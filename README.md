@@ -49,7 +49,7 @@ java com.metglobal.example.App
 ```
 
 
-### Dependencies/plugins
+### Plugins
 
 For running JAR file with above app, we need manifest file in it, but :
 
