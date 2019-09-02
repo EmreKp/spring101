@@ -48,7 +48,6 @@ cd target/classes
 java com.metglobal.example.App
 ```
 
-
 ### Plugins
 
 For running JAR file with above app, we need manifest file in it, but we should run :
@@ -79,7 +78,6 @@ For running JAR file with above app, we need manifest file in it, but we should 
 |src/main/resources|contains static files and properties|
 
 ### Repositories
-
 There are three types of repositories: local, central, remote. Remote repository syntax:
 ```
 <repositories>
@@ -106,11 +104,14 @@ Parent pom is required for all Spring Boot applications:
 ```
 
 Most used starter dependencies:
-**spring-boot-starter-web** : for writing REST endpoints
-**spring-boot-starter-security** : for writing security services like authentication
-**spring-boot-starter-thymeleaf** : for web applications
-**spring-boot-starter-actuator** : for monitoring application
 
+**spring-boot-starter-web** : for writing REST endpoints
+
+**spring-boot-starter-security** : for writing security services like authentication
+
+**spring-boot-starter-thymeleaf** : for web applications
+
+**spring-boot-starter-actuator** : for monitoring application
 
 ### Typical project layout
 
@@ -121,7 +122,6 @@ Most used starter dependencies:
 We can create a Spring Boot project from Spring Initializr (http://start.spring.io) or from IDE (we'll use IntelliJ IDEA for this).
 
 ## Create REST service
-
 We should add `spring-boot-starter-web` dependency for creating REST APIs.
 
 ```
@@ -132,7 +132,6 @@ We should add `spring-boot-starter-web` dependency for creating REST APIs.
 ```
 
 ### Controller
-
 We should specify controllers with @Controller or @RestController annotations. Example controller:
 
 ```
@@ -146,11 +145,9 @@ public class MainController {
 ```
 
 ### Returning objects
-
 Create an object and return it as JSON instead of string.
 
 ### Dependency Injection - Autowiring
-
 We should write business logic to services and autowire in controller.
 
 ### application.properties
@@ -172,4 +169,8 @@ private String currencyUrl;
 
 
 ## Thymeleaf
+### Displaying text
+### Loops
+### Conditional
+
 ## JPA
