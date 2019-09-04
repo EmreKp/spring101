@@ -1,5 +1,4 @@
 # spring101
-Spring is a framework written in Java. Java projects can be built with some tools like Maven or Gradle.
 
 ## Maven
 Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build from a central piece of information. 
@@ -10,6 +9,23 @@ Apache Maven is a software project management and comprehension tool. Based on t
 - dependency management: it includes automatic updating, downloading and validating the compatibility
 - isolation between project dependencies and plugins: with Maven, project dependencies are retrieved from the dependency repositories while any plugin’s dependencies are retrieved from the plugin repositories, resulting in fewer conflicts when plugins start to download additional dependencies
 - central repository system: project dependencies can be loaded from the local file system or public repositories, such as Maven Central (www.mvnrepository.com)
+
+### Create and build Maven project
+
+Creating:
+
+```
+mvn archetype:generate -DgroupId=com.metglobal.example -DartifactId=hello-world -DarchetypeArtifactId=maven-archetype-quickstart 
+``` 
+
+Packaging:  `mvn package` | `mvn install` | `mvn clean package` | `mvn clean install (preferred)`
+
+Running:
+
+```
+cd target/classes
+java com.metglobal.example.App
+```
 
 ### POM (Project Object Model)
 POM is fundamental unit of work in Maven. It is an XML file that resides in the base directory of the project as pom.xml.
@@ -30,23 +46,6 @@ Example pom.xml:
 </project>
 ```
 
-
-### Create and build Maven project
-
-Creating:
-
-```
-mvn archetype:generate -DgroupId=com.metglobal.example -DartifactId=hello-world -DarchetypeArtifactId=maven-archetype-quickstart 
-``` 
-
-Packaging:  `mvn package` | `mvn install` | `mvn clean package` | `mvn clean install (preferred)`
-
-Running:
-
-```
-cd target/classes
-java com.metglobal.example.App
-```
 
 ### Plugins
 
