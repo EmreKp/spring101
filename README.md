@@ -18,6 +18,8 @@ Creating:
 mvn archetype:generate -DgroupId=com.metglobal.example -DartifactId=hello-world -DarchetypeArtifactId=maven-archetype-quickstart 
 ``` 
 
+**Build lifecycle (most important commands)** :  `validate -> compile -> test -> package -> verify -> install -> deploy`
+
 Packaging:  `mvn package` | `mvn install` | `mvn clean package` | `mvn clean install (preferred)`
 
 Running:
@@ -80,10 +82,10 @@ For running JAR file with above app, we need manifest file in it, but we should 
 There are three types of repositories: local, central, remote. Remote repository syntax:
 ```
 <repositories>
-		<repository>
-		    <id>jitpack.io</id>
-		    <url>https://jitpack.io</url>
-		</repository>
+	<repository>
+	    <id>jitpack.io</id>
+	    <url>https://jitpack.io</url>
+	</repository>
 </repositories>
 ```
 
