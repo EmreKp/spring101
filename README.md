@@ -69,6 +69,8 @@ Example pom.xml:
 
 ### Dependencies
 
+You can specify parent POM if all dependencies are related to it in a way
+
 Basic syntax:
 
 ```
@@ -182,7 +184,7 @@ public class MainController {
 Create an object and return it as JSON instead of string.
 
 ### Dependency Injection - Autowiring
-We should write business logic to services and autowire in controller.
+We should write business logic to services and autowire in controller. It provides injecting classes without instantiating.
 
 ### application.properties
 properties file only consists:
