@@ -139,9 +139,11 @@ Most used starter dependencies:
 
 **spring-boot-starter-web** : for writing REST endpoints
 
-**spring-boot-starter-security** : for writing security services like authentication
+**spring-boot-starter-data-jpa** : for db operations
 
 **spring-boot-starter-thymeleaf** : for web applications
+
+**spring-boot-starter-security** : for writing security services like authentication
 
 **spring-boot-starter-actuator** : for monitoring application
 
