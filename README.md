@@ -121,7 +121,7 @@ There are three types of repositories: local, central, remote. Remote repository
 ```
 
 ## Spring Boot
-Spring Boot contains a comprehensive infrastructure support for developing a micro service and enables you to develop enterprise-ready applications that you can “just run”. Spring Boot doesn't require XML configuration, it can be easily done with annotations (**@Component**, **@Configuration**, **Service** etc.)
+Spring Boot contains a comprehensive infrastructure support for developing a micro service and enables you to develop enterprise-ready applications that you can “just run”. Spring Boot hosts all packages we needed to run for starting.
 
 ### Starter dependencies
 Parent pom is required for all Spring Boot applications:
