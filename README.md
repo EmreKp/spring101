@@ -200,8 +200,12 @@ We can access the value by:
 private String currencyUrl;
 ```
 
+We can specify profile specific properties with application-`profile`.properties file.
+
 
 ### RestTemplate for sending clients
+
+
 
 
 ## Thymeleaf
